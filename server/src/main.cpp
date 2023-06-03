@@ -327,7 +327,7 @@ void CMain::WatchdogMessage(int ClientNetID, double load_1, double load_5, doubl
 
                     //url encode
                     char encodeBuffer[2048] = { 0 };
-                    sprintf(encodeBuffer, " \n\n【告警名称】 %s \n\n【告警规则】 %s  \n\n【告警时间】 %s  \n\n ---------------- \n\n【用户名】 %s \n\n【节点名】 %s \n\n【虚拟化】 %s \n\n【主机名】 %s \n\n【位  置】 %s",
+                    sprintf(encodeBuffer, "【告警名称】 %s 【告警规则】 %s 【告警时间】 %s 【用户名】 %s 【节点名】 %s 【虚拟化】 %s 【主机名】 %s 【位  置】 %s",
                             Watchdog(ID)->m_aName,
                             Watchdog(ID)->m_aRule,
                             standardTime,
